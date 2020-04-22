@@ -13,9 +13,9 @@ We marked the following occupations as essential:
 7. Personal care and service (39-0000) 
 8. Farming, fishing, and forestry (45-0000) 
 9. Construction and extraction (47-0000) 
-10.Installation, maintenance, and repair (49-0000) 
-11.Production (51-0000) 
-12.Transportation and material moving (53-0000) 
+10. Installation, maintenance, and repair (49-0000) 
+11. Production (51-0000) 
+12. Transportation and material moving (53-0000) 
 
 Recent shutdowns and closures do not follow these rigid classifications and segmenting the workforce for research is imprecise. This initial analysis includes all regional workers in the occupations listed above, but does not include workers in other frontline industries that are outside of these categories. As a result, estimates exclude some workers in industries that are hard at work during this crisis, while also including some workers who are unable to work, even though they are in essential occupations. For example, grocery store clerks are working at the frontlines, even though they are classified in a non-essential occupation (retail sales workers). However, school bus drivers are unable to work in areas where schools are closed, even though they are in an essential occupation (passenger vehicle and public transit operators). Still, the vast majority of workers in the essential occupations are essential workers. 
 
