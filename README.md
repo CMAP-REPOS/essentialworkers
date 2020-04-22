@@ -1,5 +1,5 @@
 # Where "Essential Workers" likely live
-In response to the COVID-19 crisis, Illinois Governor J.B. Pritzker passed executive order 20-10[1], requiring non-essential workers to stay home. The order and additional state guidance define the universe of essential workers -- for the most part, the people who keep our transportation system running, produce the food and supplies we use daily, and provide social services and healthcare. These workers continue to put themselves on the front lines daily to keep key facets of our region operational.
+In response to the COVID-19 crisis, Illinois Governor J.B. Pritzker passed Executive Order 20-10[1], requiring non-essential workers to stay home. The order and additional state guidance define the universe of essential workers -- for the most part, the people who keep our transportation system running, produce the food and supplies we use daily, and provide social services and healthcare.
 
 This script uses census tract-level occupational data from ACS table S2401 to approximately identify essential workers in the CMAP's 7 county Chicagoland region, along with parallel tract-level demographic information including income, poverty, and race & ethnicity data.
 
