@@ -1,7 +1,7 @@
 
-# Use ACS occupation data to approximate essential workers by census tract. Compare to race, poverty, income.
-# Matt Stern
-# 4/15/2020
+# Use ACS occupation data from table S2401 to approximate essential workers by census tract. 
+# Compare to race, poverty, income.
+# CMAP | Matt Stern | 4/15/2020
 
 # packages
 library(tidyverse)
@@ -10,12 +10,14 @@ library(tidycensus)
 
 # variables
 year <- 2018
+
+# FIPS codes for 7 counties in CMAP region
 counties <- c("031", "043", "089", "093", "097", "111", "197")
 
-# essential worker assignments (from SL)
-#  yes = essential
+# essential worker assignments, identified by variable ID.
 #  no  = not essential
-#  na  = a subtotal in the table
+#  na  = a subtotal in the table. Disregard.
+#  conman = Construction, Manufacturing, Maintenance
 occ_class <- tribble(~variable, ~essential,
                      "S2401_C01_001", "total",
                      "S2401_C01_002", "na",
@@ -55,15 +57,15 @@ occ_class <- tribble(~variable, ~essential,
                      "S2401_C01_036", "transport"
 )
 
+# build vector of occupation categories
 occ_class_list <- filter(occ_class, essential != "total" & essential != "na") %>% 
   .[["essential"]] %>% 
   unique()
 
+
 # load full ACS variables list, if needed
 #load_variables(year, "acs5/subject", cache = TRUE) %>% 
 #  View()
-
-
 
 
 # get descriptive variable names for table S2401
@@ -108,7 +110,7 @@ S2401_clean %>%
   all()
 
 
-# get demographic data
+# get demographic data from various tables
 # B01001_001 == total population
 # B19013_001 == Median HH income
 # S1701_C03_001 == Percent below poverty level
@@ -150,13 +152,11 @@ final <- S2401_clean %>%
   filter(total_workers > 99)
   
 
-  
-
-# check that all counties have all tracts
+# check that all counties have all/most tracts
 final  %>%
   group_by(county) %>% 
   summarize(records = n()) %>%
-  # These are the actual number of tracts in each county
+  # These are the actual number of 2010 census tracts in each county
   left_join(tribble(~county, ~tracts,
                     "Cook", 1319,
                     "DuPage", 216,
@@ -175,15 +175,6 @@ ggplot(final, aes(essential, hh_inc_med)) + geom_point() + geom_smooth(color = "
   coord_trans(y = "log2") + scale_y_continuous(labels = scales::comma_format(), breaks = c(50000,100000,150000,200000))
 ggplot(final, aes(essential, nonwhite_pct)) + geom_point() + geom_smooth(color = "red") + scale_y_continuous(limits = c(0,1))
 ggplot(final, aes(essential, pov_pct)) + geom_point() + geom_smooth(color = "red") + scale_y_continuous()
-
-
-# attempt some statistics
-library(modelr)
-options(scipen=999)
-full_model <- lm(essential ~ nonwhite_pct + log2(hh_inc_med) + county + total_pop + total_workers, final)
-summary(full_model)
-plot(full_model)
-
 
 
 # export
