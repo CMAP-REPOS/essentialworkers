@@ -25,5 +25,5 @@ https://cmap-repos.github.io/essentialworkers/
 
 ## Files
 - `essential occupations script.R` is a Tidyverse-based R script that utilizes the Tidycensus package to collect data directly from the US census API.
-- `index.html` is a knitted report of the above script that shows the script outputs, including some basic figures. Don't view it as html unless you really want to. View it on Github pages instead: https://cmap-repos.github.io/essentialworkers/
+- `index.html` is a knitted report of the above script that shows the script outputs, including some basic figures. Don't view it in github unless you like reading html. View it on Github pages instead: https://cmap-repos.github.io/essentialworkers/
 - `essential occupations data.csv` is the output file the script produces. This CSV includes tract-level employment and demographic statistics. 
