@@ -19,11 +19,7 @@ We marked the following occupations as essential:
 
 Recent shutdowns and closures do not follow these rigid classifications and segmenting the workforce for research is imprecise. This initial analysis includes all regional workers in the occupations listed above, but does not include workers in other frontline industries that are outside of these categories. As a result, estimates exclude some workers in industries that are hard at work during this crisis, while also including some workers who are unable to work, even though they are in essential occupations. For example, grocery store clerks are working at the frontlines, even though they are classified in a non-essential occupation (retail sales workers). However, school bus drivers are unable to work in areas where schools are closed, even though they are in an essential occupation (passenger vehicle and public transit operators). Still, the vast majority of workers in the essential occupations are essential workers. 
 
-View the output of the script here:
-https://cmap-repos.github.io/essentialworkers/
-
 
 ## Files
 - `essential occupations script.R` is a Tidyverse-based R script that utilizes the Tidycensus package to collect data directly from the US census API.
-- `index.html` is a knitted report of the above script that shows the script outputs, including some basic figures. Don't view it in github unless you like reading html. View it on Github pages instead: https://cmap-repos.github.io/essentialworkers/
 - `essential occupations data.csv` is the output file the script produces. This CSV includes tract-level employment and demographic statistics. 
