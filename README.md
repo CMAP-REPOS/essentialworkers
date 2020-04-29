@@ -6,7 +6,7 @@ This script uses census tract-level occupational data from ACS table S2401 to ap
 We marked the following occupations as essential:
 1. Community and social services (21-0000) 
 2. Health diagnosing and treating practitioners, Health technologists and technicians, and other technical occupations (29-0000) 
-3. Healthcare support (31-000) 
+3. Healthcare support (31-0000) 
 4. Protective service (33-0000) 
 5. Food preparation and service (35-0000) 
 6. Building and grounds cleaning and maintenance (37-0000) 
