@@ -1,5 +1,7 @@
 # Where "Essential Workers" likely live
-In response to the COVID-19 crisis, Illinois Governor J.B. Pritzker passed Executive Order 20-10 (https://www2.illinois.gov/Pages/Executive-Orders/ExecutiveOrder2020-10.aspx), requiring non-essential workers to stay home. The order and additional state guidance define the universe of essential workers -- for the most part, the people who keep our transportation system running, produce the food and supplies we use daily, and provide social services and healthcare.
+This analysis underpins the 4/24/2020 CMAP Policy Update [Metropolitan Chicago’s essential workers disproportionately low-income, people of color](https://www.cmap.illinois.gov/updates/all/-/asset_publisher/UIMfSLnFfMB6/content/metropolitan-chicago-s-essential-workers-disproportionately-low-income-people-of-color).
+
+In response to the COVID-19 crisis, Illinois Governor J.B. Pritzker passed [Executive Order 20-10](https://www2.illinois.gov/Pages/Executive-Orders/ExecutiveOrder2020-10.aspx), requiring non-essential workers to stay home. The order and additional state guidance define the universe of essential workers -- for the most part, the people who keep our transportation system running, produce the food and supplies we use daily, and provide social services and healthcare.
 
 This script uses census tract-level occupational data from ACS table S2401 to approximately identify essential workers in the CMAP's 7 county Chicagoland region, along with parallel tract-level demographic information including income, poverty, and race & ethnicity data.
 
