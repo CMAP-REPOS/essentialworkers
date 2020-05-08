@@ -24,4 +24,4 @@ Recent shutdowns and closures do not follow these rigid classifications and segm
 
 ## Files
 - `essential occupations script.R` is a Tidyverse-based R script that utilizes the Tidycensus package to collect data directly from the US census API.
-- `essential occupations data.csv` is the output file the script produces. This CSV includes tract-level employment and demographic statistics. 
+- `essential occupations data.csv` is the output file the script produces. This CSV includes tract-level employment and demographic statistics. The easiest way to download this file from github is to right click on [this link](https://github.com/CMAP-REPOS/essentialworkers/raw/master/essential%20occupations%20data.csv) and click "Save Link As..." (or your browser's equivalent.)
