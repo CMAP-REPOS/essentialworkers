@@ -12,7 +12,6 @@ We marked the following occupations as essential:
 4. Protective service (33-0000) 
 5. Food preparation and service (35-0000) 
 6. Building and grounds cleaning and maintenance (37-0000) 
-7. Personal care and service (39-0000) 
 8. Farming, fishing, and forestry (45-0000) 
 9. Construction and extraction (47-0000) 
 10. Installation, maintenance, and repair (49-0000) 
